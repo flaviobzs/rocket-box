@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import routes from './routes';
+import cors from 'cors';
 
 import './database';
 
@@ -13,6 +14,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(cors()); // ser acessivel para aplicações externas
     this.server.use(express.json()); // entender requisiçoes em formato .json
     this.server.use(express.urlencoded({ extended: true })); // permitir envio de arquivos na aplicação
     this.server.use(

@@ -2,8 +2,8 @@ import { Router } from 'express';
 import multer from 'multer';
 import multerConfig from './config/multer';
 
-import BoxController from './controllers/BoxController';
-import FileController from './controllers/FileController';
+import BoxController from './app/controllers/BoxController';
+import FileController from './app/controllers/FileController';
 
 const routes = Router();
 

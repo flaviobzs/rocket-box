@@ -20,12 +20,14 @@ export default createGlobalStyle`
   }
 
   body{
-    background-color: #E5E6F0;
     -webkit-font-smoothing: antialiased;
+    color: #333;
+
   }
 
   body, input, button {
-    font: 14px 'Roboto', sans-serif;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   a {
